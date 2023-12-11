@@ -211,6 +211,7 @@ def create_model_worker_app(log_level: str = "INFO", **kwargs) -> FastAPI:
                 groupsize=args.awq_groupsize,
             )
 
+            print(f"start {args.model_names} @ {args.device}")
             worker = ModelWorker(
                 controller_addr=args.controller_address,
                 worker_addr=args.worker_address,
