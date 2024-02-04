@@ -152,7 +152,7 @@ MODEL_PATH = {
         "m3e-large": "moka-ai/m3e-large",
         "bge-small-zh": "BAAI/bge-small-zh",
         "bge-base-zh": "BAAI/bge-base-zh",
-        "bge-large-zh": "BAAI/bge-large-zh",
+        "bge-large-zh": "/home/baichuang/Baichuan-7B/dataroot/models/BAAI/bge-large-zh",
         "bge-large-zh-noinstruct": "BAAI/bge-large-zh-noinstruct",
         "bge-base-zh-v1.5": "BAAI/bge-base-zh-v1.5",
         "bge-large-zh-v1.5": "BAAI/bge-large-zh-v1.5",
@@ -165,7 +165,7 @@ MODEL_PATH = {
     "llm_model": {
         "chatglm2-6b": "THUDM/chatglm2-6b",
         "chatglm2-6b-32k": "THUDM/chatglm2-6b-32k",
-        "chatglm3-6b": "THUDM/chatglm3-6b",
+        "chatglm3-6b": "/home/chatglm/chatglm3-6b",
         "chatglm3-6b-32k": "THUDM/chatglm3-6b-32k",
 
         "Orion-14B-Chat": "OrionStarAI/Orion-14B-Chat",

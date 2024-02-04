@@ -360,6 +360,7 @@ def get_model_worker_config(model_name: str = None) -> dict:
     from configs.server_config import FSCHAT_MODEL_WORKERS
     from server import model_workers
 
+    print(f"get {model_name}'s config")
     config = FSCHAT_MODEL_WORKERS.get("default", {}).copy()
     config.update(ONLINE_LLM_MODEL.get(model_name, {}).copy())
     config.update(FSCHAT_MODEL_WORKERS.get(model_name, {}).copy())
@@ -380,6 +381,7 @@ def get_model_worker_config(model_name: str = None) -> dict:
         if path and os.path.isdir(path):
             config["model_path_exists"] = True
         config["device"] = llm_device(config.get("device"))
+        print(f"{model_name} is local model, conf device is {config.get('device')},llm_device use {config['device']}")
     return config
 
 
